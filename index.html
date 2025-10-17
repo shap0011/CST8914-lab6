@@ -42,6 +42,9 @@
         width: 30px;
         fill: #91929a;
       }
+      .bg-gray-custom {
+        background-color: #f2f2f2 !important;
+      }
     </style>
   </head>
 
@@ -139,7 +142,7 @@
           </p>
           <h3 id="stats">Stats of HI/Max</h3>
           <div class="table-responsive">
-            <table class="table table-striped table-bordered">
+            <table class="table table-bordered">
               <caption class="wb-inv">
                 Sales by year, with sold properties by province and average
                 selling prices by property type.
@@ -147,30 +150,85 @@
               <thead>
                 <tr>
                   <!-- top-level headers -->
-                  <th id="h-year" scope="col" rowspan="2">Year</th>
-                  <th id="h-sold" scope="col" colspan="2">Sold Properties</th>
-                  <th id="h-price" scope="col" colspan="2">
+                  <th
+                    id="h-year"
+                    class="bg-dark text-white text-center"
+                    scope="col"
+                    rowspan="2"
+                  >
+                    Year
+                  </th>
+                  <th
+                    id="h-sold"
+                    class="bg-dark text-white text-center"
+                    scope="col"
+                    colspan="2"
+                  >
+                    Sold Properties
+                  </th>
+                  <th
+                    id="h-price"
+                    class="bg-dark text-white text-center"
+                    scope="col"
+                    colspan="2"
+                  >
                     Average selling price
                   </th>
                 </tr>
                 <tr>
                   <!-- sub-headers -->
-                  <th id="h-sold-qc" scope="col">Quebec</th>
-                  <th id="h-sold-on" scope="col">Ontario</th>
-                  <th id="h-price-house" scope="col">Single house</th>
-                  <th id="h-price-condo" scope="col">Condo</th>
+                  <th
+                    id="h-sold-qc"
+                    class="bg-gray-custom text-center"
+                    scope="col"
+                  >
+                    Quebec
+                  </th>
+                  <th
+                    id="h-sold-on"
+                    class="bg-gray-custom text-center"
+                    scope="col"
+                  >
+                    Ontario
+                  </th>
+                  <th
+                    id="h-price-house"
+                    class="bg-gray-custom text-center"
+                    scope="col"
+                  >
+                    Single house
+                  </th>
+                  <th
+                    id="h-price-condo"
+                    class="bg-gray-custom text-center"
+                    scope="col"
+                  >
+                    Condo
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th id="y-2021" scope="row">2021</th>
+                  <th
+                    id="y-2021"
+                    class="bg-gray-custom text-center"
+                    scope="row"
+                  >
+                    2021
+                  </th>
                   <td headers="y-2021 h-sold h-sold-qc">50</td>
                   <td headers="y-2021 h-sold h-sold-on">100</td>
                   <td headers="y-2021 h-price h-price-house">$500,000</td>
                   <td headers="y-2021 h-price h-price-condo">$189,000</td>
                 </tr>
                 <tr>
-                  <th id="y-2022" scope="row">2022</th>
+                  <th
+                    id="y-2022"
+                    class="bg-gray-custom text-center"
+                    scope="row"
+                  >
+                    2022
+                  </th>
                   <td headers="y-2022 h-sold h-sold-qc">100</td>
                   <td headers="y-2022 h-sold h-sold-on">200</td>
                   <td headers="y-2022 h-price h-price-house">$780,000</td>
