@@ -98,7 +98,7 @@
     <main id="wb-cont" role="main" class="container">
       <h1>Welcome</h1>
       <!-- Content A here -->
-      <section aria-labelledby="intro-heading">
+      <section aria-labelledby="intro-heading" class="mb-4">
         <h2 id="intro-heading">Hi/Max Real Estate &amp; Houses</h2>
         <p>
           Buying or selling a home is likely the largest and most important
@@ -110,14 +110,34 @@
           <a href="#get-started">Let's get started</a>
         </p>
       </section>
+
       <div class="row">
-        <div style="border: 1px solid black" class="col-md-4 pull-right">
-          <p style="border: 1px solid black">Content B here</p>
-          Content B here
-        </div>
-        <div class="col-md-8">
-          <p style="border: 1px solid black">Content C here</p>
-        </div>
+        <!-- Content B here (sidebar) -->
+        <aside class="col-md-4 pull-right" aria-labelledby="related-heading">
+          <section>
+            <h2 id="related-heading">Related resources</h2>
+            <p>
+              It's time to sell and find the next "one". Let us help you
+              navigate the ins &amp; outs of your next move.
+            </p>
+            <ul>
+              <li><a href="#upgrade">Looking for an upgrade?</a></li>
+              <li><a href="#buying-tips">Buying tips</a></li>
+              <li>
+                <a href="#home-worth">How much is your current home worth?</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <!-- Content C here (main content area) -->
+        <section class="col-md-8" aria-labelledby="why-heading">
+          <h2 id="why-heading">Why choosing HI/Max</h2>
+          <p>
+            Hi/Max agents go above and beyond and always strive to be the best
+            they can be. HI/MAX is extremely community focused, and our agents
+            are too!
+          </p>
+        </section>
       </div>
       <div class="clear"></div>
       <div style="border: 1px solid black">Content D here</div>
